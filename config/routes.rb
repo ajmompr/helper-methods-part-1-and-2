@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # Read
-  root "movies#index", as: :movies # gives us movies_url (returns string containing URL) & movies_path (which returns path string)
+  root "movies#index", as: :movies # gives us movies_url (returns string containing URL) & movies_path (which returns path string); index is typically plural
 
   # Routes for the Movie resource:
 
