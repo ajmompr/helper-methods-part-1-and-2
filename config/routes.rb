@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
   # Read
-  root "movies#index", as: :movies # gives us movies_url (returns string containing URL) & movies_path (which returns path string); index is typically plural
-
+  root "movies#index"  
   # Routes for the Movie resource:
 
   # CREATE
-  post "/movies" => "movies#create"
+  post "/movies" => "movies#create", as: :movies # gives us movies_url (returns string containing URL) & movies_path (which returns path string); index is typically plural
+
 
   # NEW
   get "/movies/new" => "movies#new", as: :new_movie #new_movie_url & new_movie_path
