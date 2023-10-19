@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   post "/directors" => "directors#create", as: :directors
 
   # New
-  get "/movies/new" => "directors#new", as: :new_director
+  get "/directors/new" => "directors#new", as: :new_director
 
   # Read
   get "/directors" => "directors#index"
