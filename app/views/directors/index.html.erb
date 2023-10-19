@@ -31,6 +31,8 @@
       <th>
         Updated at
       </th>
+      <th>
+      </th>
     </tr>
 
     <% @directors.each do |director| %>
@@ -52,6 +54,9 @@
         </td>
         <td>
           <%= time_ago_in_words(director.updated_at) %>
+        </td>
+        <td>
+          <%= link_to "Show details", director %>
         </td>
         <% end %>
       </tr>
