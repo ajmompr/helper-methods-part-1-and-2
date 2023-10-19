@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  # Read
-  root "directors#index"
 
   # Create
   post "/directors" => "directors#create", as: :directors
@@ -9,7 +7,7 @@ Rails.application.routes.draw do
   get "/movies/new" => "directors#new", as: :new_director
 
   # Read
-  get "/directors" => "diretors#index"
+  get "/directors" => "directors#index"
   get "/directors/:id" => "directors#show", as: :director
 
   # Update
